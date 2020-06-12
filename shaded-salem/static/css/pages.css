@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px 2500px 40px;
+    grid-gap: 5px;
 }
 
 .head-header {
