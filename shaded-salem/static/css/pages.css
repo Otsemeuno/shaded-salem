@@ -106,7 +106,7 @@ body {
     body {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 1300px 50px;
+        grid-template-rows: 100px 1000px 50px;
     }
     .head-header {
         display: grid;
