@@ -1,0 +1,61 @@
+@import"./pages.css";
+@import"./images.css";
+.about-con {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "bb" "";
+}
+
+.burna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    box-shadow: o 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+    padding: 2px 16px;
+}
+
+@media only screen and (min-width: 763px) and (min-height: 500px) {
+    .about-con {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+    .card {
+        top: 50px;
+        position: relative;
+        left: -40px;
+        box-shadow: o 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 550px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .counter {
+        padding: 2px 16px;
+    }
+}

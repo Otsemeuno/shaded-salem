@@ -1,0 +1,170 @@
+body {
+    background-color: whitesmoke;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+    color: black
+}
+
+.container {
+    display: grid;
+    grid-template-columns: device-width;
+    grid-template-rows: 0.25em 0.25em device-height 0.15em;
+    border: 2px solid whitesmoke;
+    grid-gap: 2px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-family: 'Tangerine', serif;
+    font-weight: bolder;
+}
+
+#name {
+    font-size: 30px;
+}
+
+#name1 {
+    font-size: 20px;
+    text-shadow: 6px 6px 6px black;
+}
+
+.menu {
+    background-color: teal;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 5px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.box {
+    border: 1px solid gray;
+    display: flex;
+    align-items: baseline;
+    padding: 8px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+#footer {
+    font-size: xx-large;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 95% 5%;
+    grid-gap: 5px;
+    grid-template-areas: "pst" "bttn";
+}
+
+.post {
+    grid-area: pst;
+    display: grid;
+    grid-template-columns: device-width;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1px;
+}
+
+.boxcon {
+    display: grid;
+    border: 1px solid gray;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    /*background-color: wheat;*/
+    padding: 10px;
+}
+
+.bttn {
+    grid-area: bttn;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    color: white;
+    border: 1px solid blue;
+    background-color: teal;
+    height: 20px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    justify-content: center;
+    padding: 2px;
+}
+
+@media only screen and (min-width:763px) {
+    .post {
+        grid-area: pst;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+    .body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 90% 10%;
+        grid-gap: 5px;
+        grid-template-areas: "pst" "bttn";
+    }
+    button {
+        position: relative;
+        top: 0px;
+        color: white;
+        border: 1px solid blue;
+        background-color: teal;
+        height: 8vh;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        margin: 2px;
+        justify-content: center;
+        padding: 2px;
+    }
+}
+
+@media only screen and (min-height:50px) {
+    button {
+        position: relative;
+        top: 10px;
+        color: white;
+        border: 1px solid blue;
+        background-color: teal;
+        height: 25px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        margin: 2px;
+        justify-content: center;
+        padding: 2px;
+    }
+}

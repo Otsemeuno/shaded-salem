@@ -1,0 +1,50 @@
+    @import "./pages.css";
+    .boxcon {
+        display: grid;
+        height: 160px;
+        border: 1px solid gray;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+        /*background-color: wheat;*/
+        padding: 10px;
+    }
+    
+    .box {
+        border: 1px solid gray;
+        display: flex;
+        align-items: baseline;
+        padding: 8px;
+    }
+    
+    .link {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: 26px;
+    }
+    
+    .post {
+        grid-area: pst;
+        display: grid;
+        grid-template-columns: device-width;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 1px;
+    }
+    
+    @media only screen and (min-width:763px) {
+        .post {
+            grid-area: pst;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 5px;
+        }
+    }
+    
+    @media only screen and (min-width: 763px) and (min-height: 500px) {
+        body {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15vh 600px 6vh;
+        }
+    }

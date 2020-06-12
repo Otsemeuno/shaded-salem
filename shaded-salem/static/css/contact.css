@@ -1,0 +1,10 @@
+@import"./pages.css";
+.contact-details {
+    padding: 25px;
+    font-size: large;
+}
+
+.clink {
+    font-size: large;
+    color: black;
+}

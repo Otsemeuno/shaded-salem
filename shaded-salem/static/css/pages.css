@@ -1,0 +1,155 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1200px 40px;
+}
+
+.head-header {
+    position: ;
+    display: grid;
+    grid-template-columns: 6vw 70vw 20vw;
+    background-color: teal;
+    align-items: baseline;
+    justify-content: first baseline;
+}
+
+.logo {
+    position: relative;
+    top: -15px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: first baseline;
+}
+
+#sd {
+    font-size: xx-large;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+.header-name {
+    position: relative;
+    left: 30px;
+    top: -18px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: first baseline;
+    font-family: 'Tangerine', serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.dropbtn {
+    background-color: teal;
+    color: wheat;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    align-items: flex-end;
+    justify-self: end;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px purple;
+    z-index: 1
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: teal;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkblue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+#footer {
+    font-size: xx-large;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+@media only screen and (min-width: 763px) and (min-height: 500px) {
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1500px 50px;
+    }
+    .head-header {
+        display: grid;
+        grid-template-columns: 10vw 70vw 20vw;
+        background-color: teal;
+        align-items: baseline;
+        justify-content: first baseline;
+    }
+    .header-name {
+        position: relative;
+        left: -200px;
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: first baseline;
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .logo {
+        position: relative;
+        top: -10px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: first baseline;
+    }
+    .header-name {
+        position: relative;
+        left: -60px;
+        top: -5px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: first baseline;
+        font-family: 'Tangerine', serif;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .header-name {
+        left: 5px;
+    }
+}
