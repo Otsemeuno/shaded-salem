@@ -7,7 +7,7 @@ body {
 .head-header {
     position: ;
     display: grid;
-    grid-template-columns: 6vw 60vw 15vw;
+    grid-template-columns: 6vw 60vw 1fr;
     background-color: teal;
     align-items: baseline;
     justify-content: first baseline;
